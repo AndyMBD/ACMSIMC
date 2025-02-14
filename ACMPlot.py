@@ -1,5 +1,8 @@
 #coding:u8
-from pylab import plt, mpl, np
+# from pylab import plt, mpl, np
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mpl
 from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
 # from pprint import pprint
@@ -60,9 +63,10 @@ def plot_it(ax, ylabel, d, time=None):
 
 if __name__ == '__main__':
 
-    df_info = pd.read_csv(r"./info.dat", na_values = ['1.#QNAN', '-1#INF00', '-1#IND00'])
+    df_info = pd.read_csv(r"./build/info.dat", na_values = ['1.#QNAN', '-1#INF00', '-1#IND00'])
     data_file_name = df_info['DATA_FILE_NAME'].values[0].strip()
     print(data_file_name)
+    data_file_name="./build/"+data_file_name
     df_profiles = pd.read_csv(data_file_name, na_values = ['1.#QNAN', '-1#INF00', '-1#IND00'])
 
     no_samples = df_profiles.shape[0]

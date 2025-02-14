@@ -269,7 +269,13 @@ int main(){
     fclose(fw);
 
     /* Fade out */
-    system("python ../ACMPlot.py"); 
+    // printf("Simulation is done.\n");
+    // char buffer[1024];
+    // getcwd(buffer, sizeof(buffer));
+    // printf("current folder dir: %s\n", buffer);
+    system("cd ../ && python ./ACMPlot.py"); 
+    // system("cd ../"); 
+    // system("python ./ACMPlot.py"); 
     // getch();
     // system("pause");
     // system("exit");
