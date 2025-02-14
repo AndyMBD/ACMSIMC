@@ -21,11 +21,11 @@ font = {'family' : 'Times New Roman', #'serif',
 import csv
 
 try:
-    f_name = './algorithm.dat'
+    f_name = './build/algorithm.dat'
     with open(f_name, mode='r') as f:
         print('found '+f_name)
 except:
-    f_name = '../algorithm.dat'    
+    f_name = '../build/algorithm.dat'    
 print('[Python] Read in data...')
 ll = [  [],[],[],[],[],[],[],[],[],[],
         [],[],[],[],[],[],[],[],[],[],
