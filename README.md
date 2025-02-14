@@ -91,3 +91,11 @@ In near future, the English version will be brought about. But I would like to d
 Jiahao
 2020/02/10
  -->
+## History
+- [2025-2-14] modification
+  1. add cmake in vscode
+  2. cmake config, clean and build
+  3. cd ./build
+  4. run ./ACMSIMC.exe
+  5. we can get result
+  6. remove libsatlut.a

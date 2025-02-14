@@ -269,7 +269,7 @@ int main(){
     fclose(fw);
 
     /* Fade out */
-    system("python ./ACMPlot.py"); 
+    system("python ../ACMPlot.py"); 
     // getch();
     // system("pause");
     // system("exit");
