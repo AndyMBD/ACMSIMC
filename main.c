@@ -1,4 +1,5 @@
 #include "ACMSim.h"
+#include <math.h>
 
 double sign(double x){
     return (x > 0) - (x < 0);    
@@ -265,7 +266,8 @@ int main(){
 
         inverter_model();
     }
-    end = clock(); printf("The simulation in C costs %g sec.\n", (double)(end - begin)/CLOCKS_PER_SEC);
+    end = clock(); 
+    printf("The simulation in C costs %g sec.\n", (double)(end - begin)/CLOCKS_PER_SEC);
     fclose(fw);
 
     /* Fade out */
