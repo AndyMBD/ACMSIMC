@@ -1,0 +1,16 @@
+{
+    "editor.renderLineHighlight": "gutter",
+    "cmake.options.statusBarVisibility": "visible",
+    "workbench.colorCustomizations": {
+                    "editor.lineHighlightBackground": "#0400fffa",//修改光标所在行的背景色
+                    "editor.lineHighlightBorder": "#0400fffa",     //修改光标所在行的边框色
+                    "editor.selectionBackground": "#74e60a48",
+                    // "editor.selectionForeground": "#ff0000",
+                    "editorLineNumber.activeForeground": "#ff0000",
+                    "editorLineNumber.foreground": "#ffffff",
+                    // "editorGutter.background": "#ff0000"
+                    // "editor.LineNumberForeground": "#17a346"
+                                    },
+                                 
+}
+
