@@ -298,4 +298,4 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
-/build/
+build/
