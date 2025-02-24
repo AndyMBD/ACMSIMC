@@ -47,7 +47,7 @@ def write_to_ACMConfig_header_file(config_pairs):
 #endif
 '''
 
-    with open('ACMConfig.h', 'w') as f:
+    with open('./c/ACMConfig.h', 'w') as f:
         f.write(bare_template)
 
 

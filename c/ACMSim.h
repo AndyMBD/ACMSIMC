@@ -1,6 +1,7 @@
 #ifndef ACMSIM_H
 #define ACMSIM_H
 
+#define _USE_MATH_DEFINES
 /* standard lib */
 // #include <stdbool.h> // bool for _Bool and true for 1
 #include <stdio.h> // printf #include <stdbool.h> // bool for _Bool and true for 1

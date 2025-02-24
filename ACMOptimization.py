@@ -34,7 +34,9 @@ if __name__ == '__main__':
     if True:
         for i in range(0, NUMBER_OF_RUNS):
             write_to_ACMConfig_header_file(raw_config_dicts[select_config+f' - Variant Speed P {i:03d}'])
-            child = subprocess_cmd("gcc main.c controller.c observer.c -L. -o main && start cmd /c main")
+            # child = subprocess_cmd("gcc main.c controller.c observer.c -L. -o main && start cmd /c main")
+            # child = subprocess_cmd("cd ./build/ &&mingw32-make all &&./ACMSIMC.exe")
+            child = subprocess_cmd("cd ./build/ &&mingw32-make all &&ACMSIMC.exe")
             rc = child.returncode
             if rc == 0:
                 continue
@@ -46,11 +48,11 @@ if __name__ == '__main__':
     import pandas as pd
     import numpy as np
     from collections import OrderedDict as O
-    df_info = pd.read_csv(r"./info.dat", na_values = ['1.#QNAN', '-1#INF00', '-1#IND00'])
+    df_info = pd.read_csv(r"./build/info.dat", na_values = ['1.#QNAN', '-1#INF00', '-1#IND00'])
     bool_initialized = False
     for i in range(0, NUMBER_OF_RUNS):
 
-        df_profiles = pd.read_csv(f"pmsm_eemf_VSP{i:03d}.dat", na_values = ['1.#QNAN', '-1#INF00', '-1#IND00'])
+        df_profiles = pd.read_csv(f"./build/pmsm_eemf_VSP{i:03d}.dat", na_values = ['1.#QNAN', '-1#INF00', '-1#IND00'])
 
         if bool_initialized == False:
             bool_initialized = True
